@@ -1,0 +1,83 @@
+{% extends 'layout/base.html'%}
+{% load static%}
+{% block content%} 
+<div class="col-sm-9 col-md-9 col-xs-9 col-lg-9 " style="height: 80vh;">	
+	<!-- <div class="row categ" style="display: block;margin: auto;">
+		<div class="col-lg-4">
+			<label class="text-center" style="border-bottom:2px solid red"> 
+				<a href="{% url 'dashboard:hojaj_table'  %}">In danger</a></label>
+		</div>
+		<div class="col-lg-4">
+			<label class="text-center" >
+				<a href="{% url 'dashboard:hojaj_table'  %}">Suspected</a>
+			</label>
+		</div>
+		<div class="col-lg-4">
+			<label class="text-center">
+				<a href="{% url 'dashboard:hojaj_table' %}">Safe</a></label>
+		</div>
+	</div> -->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-7">
+						<h2 style="color: red; margin: auto;">IN DANGER</h2>
+					</div>
+					<div class="col-md-2">
+						<button class="btn btn-danger"> Send all  </button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h2 style="color: orange; margin: auto;">NOT SURE</h2>
+			</div>
+
+		</div>
+	<div class="TD">
+		<div class="row">
+			<div class="col-md-6" style="overflow-y: auto; height: 70vh;">
+				
+				<ul class="list-unstyled" >
+					{% for hajj_red_row in hajj_red_list %}
+					<li class="row" style="padding: 5px">
+						<div class="col-md-3">
+							<img style="width: 50px"  src="{% static 'M.jpg' %}">
+						</div>
+						<div class="col-md-5">
+							<div>{{hajj_red_row.name}}</div>
+							<div>{{hajj_red_row.age}} - {{hajj_red_row.nationality}}</div>
+						</div>
+						<div class="col-md-4" style="display: flex;">
+							<button class="btn btn-danger"> Send it  </button>
+							<a class="btn btn-link" onclick="$('#info').show();">Details</a>
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div style="position: absolute;top: 200px;left:35%;">
+				aaaaaaaaaaaaaaa
+			</div>
+			<div class="col-md-6" style="overflow-y: auto; height: 70vh;">
+				<ul class="list-unstyled">
+					{% for hajj_orange_row in hajj_orange_list %}
+					<li class="row" style="padding: 5px">
+						<div class="col-md-3">
+							<img style="width: 50px"  src="{% static 'M.jpg' %}">
+						</div>
+						<div class="col-md-5">
+							<div>{{hajj_orange_row.name}}</div>
+							<div>{{hajj_orange_row.age}} - {{hajj_orange_row.nationality}}</div>
+						</div>
+						<div class="col-md-4">
+							<button type="button" class="btn btn-warning">Warning</button>
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock%}
+

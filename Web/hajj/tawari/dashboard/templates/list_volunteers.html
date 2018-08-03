@@ -1,0 +1,33 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+<div class="col-sm-9 col-md-9 col-xs-9 col-lg-9 " style="height: 80vh;">	
+	<h3 class="text-center"><strong>List of volunteers</strong></h4>
+  	<br>
+	<div class="TD">
+		<table class="table ">
+		  	<thead class="thead-dark table-hover ">
+		    	<tr>
+		      		<th scope="col">#</th>
+		      		<th scope="col">First name </th>
+		      		<th scope="col">Last name </th>	
+		      		<th scope="col">Email</th>
+		      		<th scope="col">Phone</th>
+		      		<th scope="col">State</th>
+		    	</tr>
+		  	</thead>
+		  	<tbody>
+		  		{% for volount in volunteers %}
+		    	<tr>
+		      		<th scope="row">{{volount.id}}</th>
+		      		<td>{{volount.firstname}}</td>
+		      		<td>{{volount.lastname}}</td>
+		      		<td>{{volount.email}}</td>
+		      		<td>{{volount.phone}}</td>
+		      		<td>{{volount.state}}</td>
+		    	</tr>
+		    	{% endfor %}
+		  	</tbody>
+		</table>
+	</div>
+</div>
+{% endblock %}

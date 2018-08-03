@@ -1,0 +1,115 @@
+buildscript {
+	repositories {
+		jcenter()
+	}
+
+	dependencies {
+		classpath 'com.android.tools.build:gradle:2.2.0'
+
+	}
+}
+repositories {
+	mavenCentral()
+	flatDir {
+		dirs getProject().file('libs')
+	}
+}
+apply plugin: 'com.android.application'
+archivesBaseName = 'EXPRESS_TAwariY'
+android {
+	compileSdkVersion 24
+	buildToolsVersion '25.0.1'
+	useLibrary 'org.apache.http.legacy'
+	
+	sourceSets {
+		main {
+			manifest.srcFile getProject().file('AndroidManifest.xml')
+			java.srcDirs = [getProject().file('src')]
+			resources.srcDirs = [getProject().file('src')]
+			res.srcDirs = [getProject().file('res')]
+			assets.srcDirs = [getProject().file('assets')]
+			aidl.srcDirs = [getProject().file('src')]
+			jniLibs.srcDirs = [getProject().file('libs')]
+		}
+	}
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_5
+		targetCompatibility JavaVersion.VERSION_1_5
+    }
+	lintOptions {
+		abortOnError false
+	}
+	signingConfigs {
+		release {
+			
+			storePassword ''
+			keyAlias ''
+			keyPassword ''			
+		}
+	}
+	aaptOptions {
+		noCompress 'FNC'
+	}
+	
+android {
+	dexOptions {
+		incremental = false
+		preDexLibraries = false
+		jumboMode = false
+		javaMaxHeapSize = '2048m'
+    }
+
+}
+	buildTypes {
+		debug {
+		zipAlignEnabled true
+		minifyEnabled false
+		proguardFile file('C:\\Program Files (x86)\\PC SOFT\\WINDEV Mobile 22 Express\\Programmes\\FrameWork\\Android\\dep\\prg.dat')
+        multiDexEnabled false
+		}
+		release {
+		zipAlignEnabled true
+		signingConfig signingConfigs.release
+		minifyEnabled false
+		proguardFile file('C:\\Program Files (x86)\\PC SOFT\\WINDEV Mobile 22 Express\\Programmes\\FrameWork\\Android\\dep\\prg.dat')
+		multiDexEnabled false
+		}
+		applicationVariants.all { variant ->  
+			variant.outputs.each { output ->
+				def alignedOutputFile = output.outputFile
+				// Customise APK filenames (to include build version)
+				if (variant.buildType.zipAlignEnabled) {
+					output.outputFile = getProject().file("bin/" + archivesBaseName + ".apk")
+				}
+			}
+		}
+	}
+
+}
+
+dependencies {
+	// Remote binary dependency
+	compile 'com.android.support:support-v4:23.0.+'
+	compile 'com.android.support:appcompat-v7:23.0.+'
+
+	// Local binary dependency
+	compile fileTree(dir: getProject().file('libs'), include: ['*.jar'], exclude: 'libs/fmkJava.jar')
+	compile files(getProject().file('libs/fmkJava.jar'))
+
+}
+
+gradle.projectsEvaluated {
+	preBuild.dependsOn(makeJar)
+	tasks.withType(JavaCompile) {
+		options.warnings = false
+	}
+}
+
+task makeJar(type: Jar) {
+baseName = 'fmkJava'
+destinationDir=getProject().file('libs')
+from fileTree(dir: getProject().file('libs'), include: ['**/*.class'])
+outputs.upToDateWhen {
+        archivePath.exists()
+    }
+}

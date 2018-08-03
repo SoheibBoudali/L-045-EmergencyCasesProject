@@ -1,0 +1,4 @@
+//MO000-001.TXT ANA00000 TO ANA00001
+EXPRESS_Hajj		NFI		nouveau fichier
+EXPRESS_Hajj	Adresse_email	RRN		
+EXPRESS_Hajj	Mot_de_passe	RRN		

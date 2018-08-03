@@ -1,0 +1,125 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1-2133
+	package
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:70-109
+	android:versionName
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:110-139
+		INJECTED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml
+		INJECTED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:140-163
+		INJECTED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml
+		INJECTED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:164-194
+application
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:195-1737
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:270-302
+	android:resizeableActivity
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:373-406
+	android:icon
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:303-346
+	android:largeHeap
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:347-371
+	android:name
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:208-269
+activity#com.masociete.express_tawariy.wdgen.GWDPEXPRESS_TAwariY$WDLanceur
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:407-861
+	android:screenOrientation
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:674-708
+	android:label
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:469-501
+	android:configChanges
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:571-673
+	android:theme
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:502-570
+	android:name
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:417-468
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:709-850
+action#android.intent.action.MAIN
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:724-775
+	android:name
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:732-773
+category#android.intent.category.LAUNCHER
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:775-834
+	android:name
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:785-832
+activity#com.masociete.express_tawariy.wdgen.GWDFEXPRESS_FEN_Main$WDActiviteFenetre
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:861-1109
+	android:hardwareAccelerated
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1072-1107
+	android:configChanges
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:932-1034
+	android:theme
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1035-1071
+	android:name
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:871-931
+activity#fr.pcsoft.wdjava.ui.activite.WDActivite$BlankActivity
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1109-1297
+	xmlns:android
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1119-1177
+	android:theme
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1247-1295
+	android:name
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1178-1246
+activity#fr.pcsoft.wdjava.core.erreur.report.WDErrorReportActivity
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1297-1497
+	xmlns:android
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1307-1365
+	android:theme
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1439-1495
+	android:name
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1366-1438
+service#fr.pcsoft.wdjava.core.service.WDServiceLocal
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1497-1567
+	android:name
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1506-1565
+meta-data#fr.pcsoft.first_window_name
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1567-1655
+	android:value
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1621-1653
+	android:name
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1578-1620
+meta-data#fr.pcsoft.multidex
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1655-1723
+	android:value
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1700-1721
+	android:name
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1666-1699
+uses-sdk
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1737-1805
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1774-1803
+	android:minSdkVersion
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1747-1773
+supports-screens
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1805-1964
+	android:largeScreens
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1880-1907
+	android:smallScreens
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1823-1850
+	android:normalScreens
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1851-1879
+	android:xlargeScreens
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1908-1936
+	android:anyDensity
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1937-1962
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1964-2039
+	android:name
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:1981-2037
+uses-feature#android.hardware.touchscreen
+ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:2039-2122
+	android:required
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:2097-2120
+	android:name
+		ADDED from C:\Mes Projets Mobile\EXPRESS_TAwariY\Android\Generation\AndroidManifest.xml:2:2053-2096

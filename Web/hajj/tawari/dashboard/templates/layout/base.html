@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>طوارئ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{%  static 'style.css'  %}">
+  
+</head>
+<body>
+	<nav class="navbar navbar-inverse " style="background-color: white;margin-bottom: 0px; border:1px solid white; height: 110px;">
+		<div class="container-fluid clear">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
+					<img src="{%  static 'EmergencyCaseLogo.png'  %}" style="height: 110px;width: 200px; ">
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"> 
+					<br><br>
+					<div class="input-group">
+			        	<input type="text" class="form-control" placeholder="Search">
+			        	<span class="input-group-btn">
+			          		<button class="btn btn-default" type="button">
+			            		<span class="glyphicon glyphicon-search"></span>
+			          		</button>
+			        	</span>
+			      	</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<br>
+	<div class="container-fluid" style="margin-top: -17px">	
+		<div class="row content">
+		    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3 sidenav" style="height: 100%;">
+		    	<div class="row" style="background-color:rgb(217,6,9);height: 95px; 	">
+		    		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		    			<img  src="{%  static 'this.jpg'  %}" style=" height: 70px; border-radius: 40%;margin-top: 2vh; margin-bottom: 2vh;">
+		    		</div>
+		    		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+		    			<h2 class="text-center text-justify" style="color: white;font-size: 1.5vw;">Riad Bengriche</h2>
+		    			<div class="btn-group" role="group" aria-label="Basic example">
+							  <button type="button" class="btn btn-success">Online</button>
+							  <button type="button" class="btn btn-danger">Offline</button>
+							</div>
+		    		</div>
+		    	</div>
+		    	<div class="row">
+					<ul class="list-group">
+					  	<li class="list-group-item d-flex justify-content-between align-items-center" style="border: 1px solid white; margin-top: 2vh;">
+					    	<a href="{% url 'dashboard:hojaj_table'  %}">List of Hajaj</a>
+					    	<span class="badge badge-primary badge-pill">14</span>
+					  	</li>
+					  	<li class="list-group-item d-flex justify-content-between align-items-center" style="border: 1px solid white; margin-top: 2vh;">
+					    	<a href="{% url 'dashboard:emergency_cases'%}">List of Emergency cases</a>
+					    	<span class="badge badge-primary badge-pill">2</span>
+					  	</li>
+					  	<li class="list-group-item d-flex justify-content-between align-items-center" style="border: 1px solid white; margin-top: 2vh;">
+					    	<a href="{% url 'dashboard:volunteers_table'%}">List of volunteers</a>
+					    	<span class="badge badge-primary badge-pill">2</span>
+					  	</li>
+					  	<li class="list-group-item d-flex justify-content-between align-items-center" style="border: 1px solid white; margin-top: 2vh;">
+					  		Setting
+					  	</li>
+					  	<li class="list-group-item d-flex justify-content-between align-items-center" style="border: 1px solid white; margin-top: 2vh;">
+					  		<a href="/">Log out</a>
+					  	</li>
+					</ul>
+		    	</div>	
+			</div>
+			{% block content%}{% endblock%}
+		</div>
+	</div>
+</body>
+</html>

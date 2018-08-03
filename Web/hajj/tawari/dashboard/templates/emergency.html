@@ -1,0 +1,29 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+<div class="col-sm-9 col-md-9 col-xs-9 col-lg-9 " style="height: 80vh;">	
+	<h3 class="text-center"><strong>Emergency cases</strong></h4>
+  	<br>
+	<div class="TD">
+		<table class="table ">
+		   	<thead class="thead-dark table-hover ">
+		    	<tr>
+		      		<th scope="col">id of hajj</th>
+		      		<th scope="col">id of voulonteer</th>
+		      		<th scope="col">date</th>
+		      		<th scope="col">description</th>
+		    	</tr>
+		  	</thead>
+		  	<tbody>
+		  		{% for emr in emrhist %}
+		    	<tr>
+		      		<td scope="col">{{emr.id_hajj}}</td>
+		      		<td scope="col">{{emr.voulont_id}}</td>
+		      		<td scope="col">{{emr.date}}</td>
+		      		<td scope="col">{{emr.desc}}</td>
+		    	</tr>
+		    	{% endfor %}
+		  	</tbody>
+		</table>
+	</div>
+</div>
+{% endblock%}		
